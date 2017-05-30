@@ -1,5 +1,5 @@
 # Publish or Perish: A Backward-Compatible Defense against Selfish Mining in Bitcoin
-This is the evaluation code of the CT-RSA 2017 paper ["Publish or Perish: A Backward-Compatible Defense against Selfish Mining in Bitcoin"](https://securewww.esat.kuleuven.be/cosic/publications/article-2746.pdf) by Ren Zhang and Bart Preneel. Note that this is not an implementation of the defense itself, but an MDP code that computes the optimal selfish mining strategy and the maximum relative revenue of the selfish miner within the defense, under a given set of parameters: *alphaPower*, selfish miner's mining power share, and *superOverride* (denoted as *k* in the paper), the length difference between two chains before the attacker can override with a lighter chain. The later is a parameter in our defense chosen by the protocol designer. This code is programmed by Ren Zhang.
+This is the evaluation code of the CT-RSA 2017 paper ["Publish or Perish: A Backward-Compatible Defense against Selfish Mining in Bitcoin"](https://securewww.esat.kuleuven.be/cosic/publications/article-2746.pdf) by [Ren Zhang](https://scholar.google.be/citations?user=JB1uRvQAAAAJ&hl=en) and [Bart Preneel](https://scholar.google.be/citations?user=omio-RsAAAAJ&hl=en). Note that this is not an implementation of the defense itself, but an MDP code that computes the optimal selfish mining strategy and the maximum relative revenue of the selfish miner within the defense, under a given set of parameters: *alphaPower*, selfish miner's mining power share, and *superOverride* (denoted as *k* in the paper), the length difference between two chains before the attacker can override with a lighter chain. The later is a parameter in our defense chosen by the protocol designer. This code is programmed by Ren Zhang.
 
 Although we did not provide an implementation of the defense itself, **the defense is very simple and straightforward to implement**. We don't claim to be the optimal selfish mining defense, however **we believe this is the optimal selfish mining defense in Bitcoin to date that doesn't require a hard fork**.
 
@@ -22,8 +22,6 @@ addpath('/users/yourname/Desktop/matlab/MDPtoolbox/fsroot/MDPtoolbox');
 6. Run `Init.m`.
 
 ## Implementation
-
-### Structure
 * `Init.m`
 The portal of the program. The parameters are defined here.
 * `st2stnum.m`
