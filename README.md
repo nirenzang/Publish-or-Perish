@@ -18,7 +18,7 @@ If you only need the results:
 ```
 addpath('/users/yourname/Desktop/matlab/MDPtoolbox/fsroot/MDPtoolbox');
 ```
-5. Modify *maxB* (the maximum length of a block race), *alphaPower* and *superOverride* in Init.m. The recommended value of *maxB* is 13; 0\<*alphaPower*<=0.47; *superOverride* must be an integer, 1<=*superOverride*<=*maxB*.
+5. Modify *maxB* (the maximum length of a block race), *alphaPower* and *superOverride* in `Init.m`. The recommended value of *maxB* is 13; 0\<*alphaPower*<=0.47; *superOverride* must be an integer, 1<=*superOverride*<=*maxB*.
 6. Run `Init.m`.
 
 ## Implementation
